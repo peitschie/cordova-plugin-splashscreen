@@ -20,6 +20,10 @@
 		    </feature>
         </config-file>
 
+        <config-file target="*-Info.plist" parent="UILaunchImageFile">
+            <string>LaunchImage.png</string>
+        </config-file>
+
         <header-file src="src/ios/CDVSplashScreen.h" />
         <source-file src="src/ios/CDVSplashScreen.m" />
         <header-file src="src/ios/CDVViewController+SplashScreen.h" />
