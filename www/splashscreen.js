@@ -19,15 +19,11 @@
  *
 */
 
-var exec = require('cordova/exec');
-
-var splashscreen = {
+window.splashscreen = {
     show:function() {
-        exec(null, null, "SplashScreen", "show", []);
+        cordova.exec(null, null, "SplashScreen", "show", []);
     },
     hide:function() {
-        exec(null, null, "SplashScreen", "hide", []);
+        cordova.exec(null, null, "SplashScreen", "hide", []);
     }
 };
-
-module.exports = splashscreen;
